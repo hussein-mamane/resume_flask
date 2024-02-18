@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+    {% block title %}Give a Feedback{% endblock %}
+
+    {% block content %}
+    <div class="center-form">
+            <form  method="POST" action="{{url_for('feedback')}}">
+
+                {{ form.hidden_tag() }}
+                <h1>Feedback</h1>
+                <div class="text-field">
+                    {{ form.full_name.label }}
+                    <br>
+                     {{ form.full_name(size=35) }} 
+                    <br> 
+                    {{ form.feedback.label }}
+                    <br>
+                    {{ form.feedback(size=200) }} 
+                </div>
+                
+                <input class="button" type="submit" value="Go">
+            </form>
+        
+    </div>
+    {% endblock %}

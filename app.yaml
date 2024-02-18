@@ -1,0 +1,9 @@
+
+runtime: python310
+
+handlers:
+- url: /images
+  static_dir: static/assets
+
+- url: /.*
+  script: auto

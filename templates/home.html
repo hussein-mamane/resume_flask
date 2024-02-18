@@ -1,0 +1,127 @@
+{%extends "base.html"%}
+    {% block title %}Hussein's home page{%endblock %}
+
+    {% block content %}
+    <div class="container  py-2 mt-3 bg-white text-center  ">
+            <h1>Who Am I ?</h1> 
+    </div>
+
+    <div class="container border py-1 mt-2  bg-white ">
+        <div class="container py-1 px-5  bg-white text-center ">
+            I am Housseini Mamane, a wanabee software engineer, focused on <strong>Backend Developement</strong> <br>
+            I am a fifth year student in the "Facultés des sciences et techniques" of Mohammedia, Morocco.
+            <br> Currently I am seeking for an end-of-study intership to get my engineer degree. <br>
+            <strong>Stage PFE</strong>(Bac +5).
+            See this page on<a href="https://enduring-sign-412408.ew.r.appspot.com">Google Cloud</a>
+        </div> 
+        <div class="container py-1 px-5  bg-white text-center ">
+            <a href="https://github.com/hussein-mamane">My Github <i class="bi bi-github"></i> </a> <br>
+            <a href="https://www.linkedin.com/in/housseïni-mamane-559795229">My LinkedIn <i class="bi bi-linkedin"></i></a> <br>
+            Call Me on +212 722658019 <br>
+            <a href="mailto:hous.mamane012@gmail.com">Mail me</a>
+        </div>
+    </div>
+    <div class="container  py-2 mt-3 bg-white text-center  ">
+        <h1>Backend Techs I have experience with</h1> 
+    </div>
+    <div class="container border py-1 mt-2 bg-white ">
+        <div class="container py-1 px-5 bg-white text-center ">
+            <!-- I am Housseini Mamane, a wanabee software engineer, focused on <strong>Backend Developement</strong> -->
+            <!-- <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/docker.png')}}" class="card-img-top w-100 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">Paragraph below image 3</p>
+                            </div>
+                        </div>
+                    </div> -->
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/collaboration.png')}}" class="card-img-top w-50 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">Teamwork is key to success, using Git, I know how to collaborate and discuss in a sane way to solve challenges without burning out anyone.</p>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/aspnetcore.png')}}" class="card-img-top w-100 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">Using CSharp, I use .NET Core MVC. <br>.NET is really solid, It provides things like N-tier and Identity, with high scalability. Like all the techs I list here, I hope I will work with it in real production code.</p>
+                                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 pt-2 col-sm-12 ">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/python.png')}}" class="card-img-top w-50 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">It is quick to develop with, reliable and versatile, I use it for apps because It can do everything from sites and compute to airflow and pyspark and gcp.</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/flask.png')}}" class="card-img-top w-50 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">Litte apps, APIs and website like this one, I write in flask.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/django.png')}}" class="card-img-top w-100 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">I work with Django for it includes almost everything right in the framework, it is also extremely quick to develop and secure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/ubuntu.png')}}" class="card-img-top w-50 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">I use Ubuntu as Unix choice as for most VMs in production, linux-based OS are the most common.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/sql.png')}}" class="card-img-top w-100 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">When I work with relational databases, even when using an ORM like EF Core, I sometimes need to check on things with raw SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/gcp.png')}}" class="card-img-top w-50 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">I like using the infrastructure given by GCP to deploy easily, a version of this site runs on AppEngine.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pt-2">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static',filename='assets/mongo.png')}}" class="card-img-top w-100 mt-2">
+                            <div class="card-body">
+                                <p class="card-text">I use it with Flask and Express.js, Document storage are so flexible, most organizations don't ignore them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             
+        </div> 
+        
+    </div>
+    {% endblock %}
